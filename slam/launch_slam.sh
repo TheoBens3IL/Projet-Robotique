@@ -1,6 +1,8 @@
 #!/bin/bash
 
-WORLDS_DIR=~/Documents/Projet-Robotique/workspace/src/ros_world/worlds
+WORKSPACE_DIR=~/workspace/src/Projet-Robotique/workspace/src
+
+WORLDS_DIR=$WORKSPACE_DIR/ros_world/worlds
 
 WORLDS=($(ls $WORLDS_DIR/*.world | sed 's/.*\///; s/\.world$//'))
 
@@ -19,6 +21,8 @@ else
     exit1
 fi
 
+cp $WORLDS_DIR/$WORLD.world $WORLDS_DIR/temp.world
+
 # Lancer roscore dans un nouveau terminal
 gnome-terminal -- bash -c "roscore; exec bash"
 
@@ -28,8 +32,10 @@ sleep 2
 # Définir la variable d'environnement TURTLEBOT3_MODEL
 export TURTLEBOT3_MODEL=burger
 
+sed -i 's|name" value.*|name" value="$(find Projet_Robotique)/workspace/src/ros_world/worlds/temp.world"/>|' $WORKSPACE_DIR/ros_world/launch/turtlebot3_world.launch
+
 # Lancer le monde spécifié
-gnome-terminal -- bash -c "roslaunch turtlebot3_gazebo turtlebot3_world.launch world_name:=$WORLD; exec bash"
+gnome-terminal -- bash -c "source ~/workspace/src/Projet-Robotique/workspace/devel/setup.bash && roslaunch $WORKSPACE_DIR/ros_world/launch/turtlebot3_world.launch; exec bash"
 
 sleep 8
 
