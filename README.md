@@ -1,5 +1,10 @@
 # Projet-Robotique
 
+## Dépendances requises
+```
+sudo apt-get install ros-noetic-dwa-local-planner
+```
+
 ## Execution du programme
 
 Si un workspace était déja créé :
