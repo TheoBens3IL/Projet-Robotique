@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/path_planning_ws/install
+
+Name: turtlebot3
+Description: Description of turtlebot3
+Version: 1.2.5
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: urdf xacro

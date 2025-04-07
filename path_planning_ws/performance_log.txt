@@ -1,0 +1,100 @@
+Algorithm: astar
+Execution Time: 2.0086 seconds
+Path Length: 25
+-------------------------------------
+Algorithm: astar
+Execution Time: 1.0482 seconds
+Path Length: 12
+-------------------------------------
+Algorithme : astar
+Temps d'exécution : 3.1987 secondes
+Longueur du chemin : 40
+-------------------------------------
+Algorithme : astar
+Temps d'exécution : 2.7887 secondes
+Longueur du chemin : 32 cases (1.60 mètres)
+-------------------------------------
+Algorithme : astar
+Temps d'exécution : 3.6921 secondes
+Longueur du chemin : 34 cases (1.70 mètres)
+-------------------------------------
+Algorithme : astar
+Temps d'exécution : 4.6661 secondes
+Longueur du chemin : 51 cases (2.55 mètres)
+-------------------------------------
+Algorithme : astar
+Temps d'exécution : 0.9480 secondes
+Longueur du chemin : 14 cases (0.70 mètres)
+-------------------------------------
+Algorithme : dijkstra
+Temps d'exécution : 66.1729 secondes
+Longueur du chemin : 25 cases (1.25 mètres)
+-------------------------------------
+Algorithme : dijkstra
+Temps d'exécution : 57.6809 secondes
+Longueur du chemin : 29 cases (1.45 mètres)
+-------------------------------------
+Algorithme : dijkstra
+Temps d'exécution : 114.4262 secondes
+Longueur du chemin : 38 cases (1.90 mètres)
+-------------------------------------
+Algorithme : greedy
+Temps d'exécution : 1.9147 secondes
+Longueur du chemin : 26 cases (1.30 mètres)
+-------------------------------------
+Algorithme : greedy
+Temps d'exécution : 1.5184 secondes
+Longueur du chemin : 20 cases (1.00 mètres)
+-------------------------------------
+Algorithme : greedy
+Temps d'exécution : 1.4369 secondes
+Longueur du chemin : 20 cases (1.00 mètres)
+-------------------------------------
+Algorithme : greedy
+Temps d'exécution : 1.4284 secondes
+Longueur du chemin : 20 cases (1.00 mètres)
+-------------------------------------
+Algorithme : greedy
+Temps d'exécution : 0.9075 secondes
+Longueur du chemin : 13 cases (0.65 mètres)
+-------------------------------------
+Algorithme : greedy
+Temps d'exécution : 2.2318 secondes
+Longueur du chemin : 27 cases (1.35 mètres)
+-------------------------------------
+Algorithme : greedy
+Temps d'exécution : 2.1473 secondes
+Longueur du chemin : 26 cases (1.30 mètres)
+-------------------------------------
+Algorithme : greedy
+Temps d'exécution : 1.2313 secondes
+Longueur du chemin : 14 cases (0.70 mètres)
+-------------------------------------
+Algorithme : greedy
+Temps d'exécution : 1.7810 secondes
+Longueur du chemin : 22 cases (1.10 mètres)
+-------------------------------------
+Algorithme : greedy
+Temps d'exécution : 4.0644 secondes
+Longueur du chemin : 49 cases (2.45 mètres)
+-------------------------------------
+Algorithme : greedy
+Temps d'exécution : 5.0188 secondes
+Longueur du chemin : 65 cases (3.25 mètres)
+-------------------------------------
+Algorithme : greedy
+Temps d'exécution : 3.9992 secondes
+Longueur du chemin : 57 cases (2.85 mètres)
+-------------------------------------
+Algorithme : greedy
+Temps d'exécution : 4.0677 secondes
+Longueur du chemin : 58 cases (2.90 mètres)
+-------------------------------------
+Algorithme : greedy
+Temps d'exécution : 3.9681 secondes
+Longueur du chemin : 56 cases (2.80 mètres)
+-------------------------------------
+Algorithme : dijkstra
+Temps d'exécution : 157.6473 secondes
+Longueur du chemin : 68 cases (3.40 mètres)
+-------------------------------------
