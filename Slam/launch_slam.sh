@@ -1,9 +1,22 @@
 #!/bin/bash
 
-if [ -z "$1" ]; then
-  echo "Veuillez spécifier le monde à utiliser (par exemple, turtlebot3_world, turtlebot3_house, etc.)"
-  echo "Usage: $0 <world>"
-  exit 1
+WORLDS_DIR=~/Documents/Projet-Robotique/path_planning_ws/src/ros_world/worlds
+
+WORLDS=($(ls $WORLDS_DIR/*.world | sed 's/.*\///; s/\.world$//'))
+
+echo "Mondes disponibles: "
+for i in "${!WORLDS[@]}"; do
+    echo "$((i+1)). ${WORLDS[$i]}"
+done
+
+read -p "Entrer le numéro du monde à utiliser : " CHOIX
+
+if (( CHOIX >= 1 && CHOIX <= ${#WORLDS[@]} )); then
+    WORLD=${WORLDS[$((CHOIX-1))]}
+    echo "Voux avez choisi : $WORLD"
+else
+    echo "Choix invalide"
+    exit1
 fi
 
 # Lancer roscore dans un nouveau terminal
@@ -13,10 +26,10 @@ gnome-terminal -- bash -c "roscore; exec bash"
 sleep 2
 
 # Définir la variable d'environnement TURTLEBOT3_MODEL
-export TURTLEBOT3_MODEL=burger
+export TURTLEBOT3_MODEL=turtlebot3
 
 # Lancer le monde spécifié
-gnome-terminal -- bash -c "roslaunch turtlebot3_gazebo $1.launch; exec bash"
+gnome-terminal -- bash -c "roslaunch turtlebot3_gazebo turtlebot3_world.launch world_name:=$WORLD; exec bash"
 
 sleep 8
 
