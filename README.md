@@ -20,7 +20,7 @@ source ~/path_planning_ws/devel/setup.bash
 roslaunch global_path_planning turtlebot3_ros_world.launch
 ```
 
-**terminal 3 :**
+**terminal 3 :** <br>
 *path_planning*
 ```
 cd ~/path_planning_ws/
