@@ -98,3 +98,19 @@ Algorithme : dijkstra
 Temps d'exécution : 157.6473 secondes
 Longueur du chemin : 68 cases (3.40 mètres)
 -------------------------------------
+Algorithme : dijkstra
+Temps d'exécution : 183.7098 secondes
+Longueur du chemin : 64 cases (3.20 mètres)
+-------------------------------------
+Algorithme : dijkstra
+Temps d'exécution : 212.7491 secondes
+Longueur du chemin : 36 cases (1.80 mètres)
+-------------------------------------
+Algorithme : dijkstra
+Temps d'exécution : 8.6260 secondes
+Longueur du chemin : 9 cases (0.45 mètres)
+-------------------------------------
+Algorithme : dijkstra
+Temps d'exécution : 3.5698 secondes
+Longueur du chemin : 7 cases (0.35 mètres)
+-------------------------------------

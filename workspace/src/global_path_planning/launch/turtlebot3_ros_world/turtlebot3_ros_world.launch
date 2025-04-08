@@ -2,7 +2,7 @@
   <!-- Arguments -->
   <arg name="model" default="burger"/>
   <arg name="open_rviz" default="true"/>
-  <arg name="map_file" default="$(find ros_world)/maps/map.yaml"/>
+  <arg name="map_file" default="$(find ros_world)/maps/ma_carte.yaml"/>
   <arg name="move_forward_only" default="false"/>
 
   <!-- rviz -->
