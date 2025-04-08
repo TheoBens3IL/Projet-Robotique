@@ -20,7 +20,8 @@ cd ~/Projet-Robotique/workspace/
 catkin_make
 source ~/Projet-Robotique/workspace/devel/setup.bash
 
-roslaunch ros_world turtlebot3_world.launch
+roslaunch ros_world salle_world.launch
+
 ```
 
 **terminal 2 :**
