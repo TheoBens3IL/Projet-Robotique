@@ -1,4 +1,4 @@
-prefix=/home/ubuntu/path_planning_ws/devel
+prefix=/home/ubuntu/Projet-Robotique/workspace/devel
 
 Name: ros_world
 Description: Description of ros_world

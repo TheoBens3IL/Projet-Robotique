@@ -1,8 +1,8 @@
-# Install script for directory: /home/ubuntu/path_planning_ws/src/global_path_planning
+# Install script for directory: /home/ubuntu/Projet-Robotique/workspace/src/global_path_planning
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ubuntu/path_planning_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/ubuntu/Projet-Robotique/workspace/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -37,38 +37,27 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-# Set path to fallback-tool for dependency-resolution.
-if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ubuntu/Projet-Robotique/workspace/build/global_path_planning/catkin_generated/installspace/global_path_planning.pc")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ubuntu/path_planning_ws/build/global_path_planning/catkin_generated/installspace/global_path_planning.pc")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/global_path_planning/cmake" TYPE FILE FILES
-    "/home/ubuntu/path_planning_ws/build/global_path_planning/catkin_generated/installspace/global_path_planningConfig.cmake"
-    "/home/ubuntu/path_planning_ws/build/global_path_planning/catkin_generated/installspace/global_path_planningConfig-version.cmake"
+    "/home/ubuntu/Projet-Robotique/workspace/build/global_path_planning/catkin_generated/installspace/global_path_planningConfig.cmake"
+    "/home/ubuntu/Projet-Robotique/workspace/build/global_path_planning/catkin_generated/installspace/global_path_planningConfig-version.cmake"
     )
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/global_path_planning" TYPE FILE FILES "/home/ubuntu/path_planning_ws/src/global_path_planning/package.xml")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/global_path_planning" TYPE FILE FILES "/home/ubuntu/Projet-Robotique/workspace/src/global_path_planning/package.xml")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/global_path_planning" TYPE DIRECTORY FILES
-    "/home/ubuntu/path_planning_ws/src/global_path_planning/launch"
-    "/home/ubuntu/path_planning_ws/src/global_path_planning/maps"
-    "/home/ubuntu/path_planning_ws/src/global_path_planning/param"
-    "/home/ubuntu/path_planning_ws/src/global_path_planning/rviz"
+    "/home/ubuntu/Projet-Robotique/workspace/src/global_path_planning/launch"
+    "/home/ubuntu/Projet-Robotique/workspace/src/global_path_planning/maps"
+    "/home/ubuntu/Projet-Robotique/workspace/src/global_path_planning/param"
+    "/home/ubuntu/Projet-Robotique/workspace/src/global_path_planning/rviz"
     )
 endif()
 
-string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
-       "${CMAKE_INSTALL_MANIFEST_FILES}")
-if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/ubuntu/path_planning_ws/build/global_path_planning/install_local_manifest.txt"
-     "${CMAKE_INSTALL_MANIFEST_CONTENT}")
-endif()

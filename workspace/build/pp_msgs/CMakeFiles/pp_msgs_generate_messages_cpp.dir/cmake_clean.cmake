@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ubuntu/path_planning_ws/devel/include/pp_msgs/MoveItPlugin.h"
-  "/home/ubuntu/path_planning_ws/devel/include/pp_msgs/PathPlanningPlugin.h"
+  "/home/ubuntu/Projet-Robotique/workspace/devel/include/pp_msgs/MoveItPlugin.h"
+  "/home/ubuntu/Projet-Robotique/workspace/devel/include/pp_msgs/PathPlanningPlugin.h"
   "CMakeFiles/pp_msgs_generate_messages_cpp"
 )
 

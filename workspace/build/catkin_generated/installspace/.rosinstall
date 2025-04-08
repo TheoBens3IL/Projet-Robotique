@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/ubuntu/path_planning_ws/install/setup.sh
+    local-name: /home/ubuntu/Projet-Robotique/workspace/install/setup.sh

@@ -67,14 +67,14 @@ set(ros_world_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(ros_world_SOURCE_PREFIX /home/ubuntu/path_planning_ws/src/ros_world)
-  set(ros_world_DEVEL_PREFIX /home/ubuntu/path_planning_ws/devel)
+  set(ros_world_SOURCE_PREFIX /home/ubuntu/Projet-Robotique/workspace/src/ros_world)
+  set(ros_world_DEVEL_PREFIX /home/ubuntu/Projet-Robotique/workspace/devel)
   set(ros_world_INSTALL_PREFIX "")
   set(ros_world_PREFIX ${ros_world_DEVEL_PREFIX})
 else()
   set(ros_world_SOURCE_PREFIX "")
   set(ros_world_DEVEL_PREFIX "")
-  set(ros_world_INSTALL_PREFIX /home/ubuntu/path_planning_ws/install)
+  set(ros_world_INSTALL_PREFIX /home/ubuntu/Projet-Robotique/workspace/install)
   set(ros_world_PREFIX ${ros_world_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/ubuntu/path_planning_ws/install/lib;/home/ubuntu/workspace/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/ubuntu/Projet-Robotique/workspace/install/lib;/home/ubuntu/workspace/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

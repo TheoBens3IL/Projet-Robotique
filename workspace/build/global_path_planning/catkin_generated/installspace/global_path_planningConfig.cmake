@@ -67,14 +67,14 @@ set(global_path_planning_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(global_path_planning_SOURCE_PREFIX /home/ubuntu/path_planning_ws/src/global_path_planning)
-  set(global_path_planning_DEVEL_PREFIX /home/ubuntu/path_planning_ws/devel)
+  set(global_path_planning_SOURCE_PREFIX /home/ubuntu/Projet-Robotique/workspace/src/global_path_planning)
+  set(global_path_planning_DEVEL_PREFIX /home/ubuntu/Projet-Robotique/workspace/devel)
   set(global_path_planning_INSTALL_PREFIX "")
   set(global_path_planning_PREFIX ${global_path_planning_DEVEL_PREFIX})
 else()
   set(global_path_planning_SOURCE_PREFIX "")
   set(global_path_planning_DEVEL_PREFIX "")
-  set(global_path_planning_INSTALL_PREFIX /home/ubuntu/path_planning_ws/install)
+  set(global_path_planning_INSTALL_PREFIX /home/ubuntu/Projet-Robotique/workspace/install)
   set(global_path_planning_PREFIX ${global_path_planning_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/ubuntu/path_planning_ws/install/lib;/home/ubuntu/workspace/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/ubuntu/Projet-Robotique/workspace/install/lib;/home/ubuntu/workspace/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

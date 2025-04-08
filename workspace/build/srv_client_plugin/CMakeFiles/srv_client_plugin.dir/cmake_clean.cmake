@@ -1,8 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/ubuntu/path_planning_ws/devel/lib/libsrv_client_plugin.pdb"
-  "/home/ubuntu/path_planning_ws/devel/lib/libsrv_client_plugin.so"
+  "/home/ubuntu/Projet-Robotique/workspace/devel/lib/libsrv_client_plugin.pdb"
+  "/home/ubuntu/Projet-Robotique/workspace/devel/lib/libsrv_client_plugin.so"
   "CMakeFiles/srv_client_plugin.dir/src/srv_client_plugin.cpp.o"
-  "CMakeFiles/srv_client_plugin.dir/src/srv_client_plugin.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

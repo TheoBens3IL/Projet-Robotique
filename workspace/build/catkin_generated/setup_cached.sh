@@ -7,7 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/ubuntu/path_planning_ws/devel:$CMAKE_PREFIX_PATH"
-export PWD='/home/ubuntu/path_planning_ws/build'
-export ROSLISP_PACKAGE_DIRECTORIES="/home/ubuntu/path_planning_ws/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/ubuntu/path_planning_ws/src:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/ubuntu/Projet-Robotique/workspace/devel:$CMAKE_PREFIX_PATH"
+export PWD='/home/ubuntu/Projet-Robotique/workspace/build'
+export ROSLISP_PACKAGE_DIRECTORIES="/home/ubuntu/Projet-Robotique/workspace/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/home/ubuntu/Projet-Robotique/workspace/src:$ROS_PACKAGE_PATH"

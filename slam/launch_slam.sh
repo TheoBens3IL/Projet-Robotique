@@ -1,10 +1,10 @@
 #!/bin/bash
 
-WORKSPACE_DIR=~/workspace/src/Projet-Robotique/workspace/src
+WORKSPACE_DIR=~/Projet-Robotique/workspace/src
 
-WORLDS_DIR=$WORKSPACE_DIR/ros_world/worlds
+WORLDS_DIR=$WORKSPACE_DIR/ros_world/launch
 
-WORLDS=($(ls $WORLDS_DIR/*.world | sed 's/.*\///; s/\.world$//'))
+WORLDS=($(ls $WORLDS_DIR/*.launch | sed 's/.*\///; s/\.launch$//'))
 
 echo "Mondes disponibles: "
 for i in "${!WORLDS[@]}"; do
@@ -21,8 +21,6 @@ else
     exit1
 fi
 
-cp $WORLDS_DIR/$WORLD.world $WORLDS_DIR/temp.world
-
 # Lancer roscore dans un nouveau terminal
 gnome-terminal -- bash -c "roscore; exec bash"
 
@@ -33,7 +31,7 @@ sleep 2
 export TURTLEBOT3_MODEL=burger
 
 # Lancer le monde spécifié
-gnome-terminal -- bash -c "roslaunch turtlebot3_gazebo $WORLD.launch; exec bash"
+gnome-terminal -- bash -c "source ~/Projet-Robotique/workspace/devel/setup.bash && roslaunch ros_world $WORLD.launch; exec bash"
 
 sleep 8
 

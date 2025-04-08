@@ -1,4 +1,4 @@
-prefix=/home/ubuntu/path_planning_ws/install
+prefix=/home/ubuntu/Projet-Robotique/workspace/install
 
 Name: pp_msgs
 Description: Description of pp_msgs

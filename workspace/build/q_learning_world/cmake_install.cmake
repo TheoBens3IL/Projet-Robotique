@@ -1,8 +1,8 @@
-# Install script for directory: /home/ubuntu/path_planning_ws/src/q_learning_world
+# Install script for directory: /home/ubuntu/Projet-Robotique/workspace/src/q_learning_world
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ubuntu/path_planning_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/ubuntu/Projet-Robotique/workspace/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -37,29 +37,18 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-# Set path to fallback-tool for dependency-resolution.
-if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ubuntu/Projet-Robotique/workspace/build/q_learning_world/catkin_generated/installspace/q_learning.pc")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ubuntu/path_planning_ws/build/q_learning_world/catkin_generated/installspace/q_learning.pc")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/q_learning/cmake" TYPE FILE FILES
-    "/home/ubuntu/path_planning_ws/build/q_learning_world/catkin_generated/installspace/q_learningConfig.cmake"
-    "/home/ubuntu/path_planning_ws/build/q_learning_world/catkin_generated/installspace/q_learningConfig-version.cmake"
+    "/home/ubuntu/Projet-Robotique/workspace/build/q_learning_world/catkin_generated/installspace/q_learningConfig.cmake"
+    "/home/ubuntu/Projet-Robotique/workspace/build/q_learning_world/catkin_generated/installspace/q_learningConfig-version.cmake"
     )
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/q_learning" TYPE FILE FILES "/home/ubuntu/path_planning_ws/src/q_learning_world/package.xml")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/q_learning" TYPE FILE FILES "/home/ubuntu/Projet-Robotique/workspace/src/q_learning_world/package.xml")
 endif()
 
-string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
-       "${CMAKE_INSTALL_MANIFEST_FILES}")
-if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/ubuntu/path_planning_ws/build/q_learning_world/install_local_manifest.txt"
-     "${CMAKE_INSTALL_MANIFEST_CONTENT}")
-endif()

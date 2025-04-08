@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ubuntu/path_planning_ws/devel/share/common-lisp/ros/pp_msgs/srv/MoveItPlugin.lisp"
-  "/home/ubuntu/path_planning_ws/devel/share/common-lisp/ros/pp_msgs/srv/PathPlanningPlugin.lisp"
+  "/home/ubuntu/Projet-Robotique/workspace/devel/share/common-lisp/ros/pp_msgs/srv/MoveItPlugin.lisp"
+  "/home/ubuntu/Projet-Robotique/workspace/devel/share/common-lisp/ros/pp_msgs/srv/PathPlanningPlugin.lisp"
   "CMakeFiles/pp_msgs_generate_messages_lisp"
 )
 
