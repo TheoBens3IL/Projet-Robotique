@@ -114,3 +114,7 @@ Algorithme : dijkstra
 Temps d'exécution : 3.5698 secondes
 Longueur du chemin : 7 cases (0.35 mètres)
 -------------------------------------
+Algorithme : dijkstra
+Temps d'exécution : 9.2121 secondes
+Longueur du chemin : 9 cases (0.45 mètres)
+-------------------------------------
