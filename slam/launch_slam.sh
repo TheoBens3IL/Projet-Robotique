@@ -32,10 +32,8 @@ sleep 2
 # Définir la variable d'environnement TURTLEBOT3_MODEL
 export TURTLEBOT3_MODEL=burger
 
-sed -i 's|name" value.*|name" value="$(find Projet_Robotique)/workspace/src/ros_world/worlds/temp.world"/>|' $WORKSPACE_DIR/ros_world/launch/turtlebot3_world.launch
-
 # Lancer le monde spécifié
-gnome-terminal -- bash -c "source ~/workspace/src/Projet-Robotique/workspace/devel/setup.bash && roslaunch $WORKSPACE_DIR/ros_world/launch/turtlebot3_world.launch; exec bash"
+gnome-terminal -- bash -c "roslaunch turtlebot3_gazebo $WORLD.launch; exec bash"
 
 sleep 8
 
