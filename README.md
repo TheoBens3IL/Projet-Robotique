@@ -57,6 +57,7 @@ rosrun global_path_planning motion_planning_server.py
 
 ### Dijkstra
 L’algorithme de Dijkstra est une méthode de recherche de chemin optimal qui fonctionne en explorant tous les chemins possibles à partir du nœud de départ en fonction du coût cumulé. <br>
+
 **📌 Principe :** <br>
   - Initialise tous les nœuds avec un coût infini sauf le départ (coût 0).
   - Explore les voisins du nœud en cours en mettant à jour leur coût si un chemin plus court est trouvé.
@@ -69,8 +70,10 @@ L’algorithme de Dijkstra est une méthode de recherche de chemin optimal qui f
 **❌Inconvénient :** <br>
   Explore souvent trop de nœuds, ce qui le rend lent sur de grandes cartes.
 
+
 ### Greedy
 Cet algorithme est plus rapide que celui de Dijkstra, mais ne garantit pas toujours le chemin optimal. <br>
+
 **📌 Principe :** <br>
   - Utilise une distance heuristique (souvent la distance euclidienne ou de Manhattan jusqu’au point d'objectif).
   - Explore toujours en priorité le nœud qui semble le plus proche du but, sans prendre en compte le coût réel du chemin parcouru. <br>
@@ -81,14 +84,16 @@ Cet algorithme est plus rapide que celui de Dijkstra, mais ne garantit pas toujo
 **❌ Inconvénient :** <br>
 Peut ignorer de bons chemins et parfois donner un trajet sous-optimal, ou encore se prendre des obstacles. Beaucoup de hasard.
 
+
 ### A*
 L’algorithme A* combine Dijkstra et Greedy pour obtenir un bon équilibre entre performance et optimalité. <br>
+
 **📌 Principe :** <br>
 - Utilise une fonction de coût optimale: <br>
   $$f(n)=g(n)+h(n)f(n) = g(n) + h(n)f(n)=g(n)+h(n)$$ <br>
- où : <br>
+ où :
     $$g(n) = \text{coût du chemin depuis le départ jusqu’à n (comme Dijkstra)}$$ <br>
- et : <br>
+ et :
     $$h(n) = \text{distance heuristique estimant le coût restant jusqu’à la cible (comme Greedy)}$$ <br>
 - À chaque étape, il explore le nœud ayant la plus petite valeur de f(n). <br>
 
