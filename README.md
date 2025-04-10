@@ -62,9 +62,10 @@ L’algorithme de Dijkstra est une méthode de recherche de chemin optimal qui f
   - Explore les voisins du nœud en cours en mettant à jour leur coût si un chemin plus court est trouvé.
   - Sélectionne à chaque itération le nœud avec le coût le plus faible.
   - Continue jusqu’à atteindre la cible ou avoir exploré tous les nœuds. <br>
-<br>
+
 **✅ Avantage :** <br>
   Garantit toujours le chemin le plus court. <br>
+
 **❌Inconvénient :** <br>
   Explore souvent trop de nœuds, ce qui le rend lent sur de grandes cartes.
 
@@ -73,9 +74,10 @@ Cet algorithme est plus rapide que celui de Dijkstra, mais ne garantit pas toujo
 **📌 Principe :** <br>
   - Utilise une distance heuristique (souvent la distance euclidienne ou de Manhattan jusqu’au point d'objectif).
   - Explore toujours en priorité le nœud qui semble le plus proche du but, sans prendre en compte le coût réel du chemin parcouru. <br>
-<br>
+
 **✅ Avantage :** <br>
   Rapide car il se focalise directement sur la cible. <br>
+
 **❌ Inconvénient :** <br>
 Peut ignorer de bons chemins et parfois donner un trajet sous-optimal, ou encore se prendre des obstacles. Beaucoup de hasard.
 
@@ -92,5 +94,6 @@ L’algorithme A* combine Dijkstra et Greedy pour obtenir un bon équilibre entr
 
 **✅ Avantage :** <br>
   Trouve souvent le chemin optimal tout en explorant moins de nœuds que Dijkstra. <br>
+
 **❌ Inconvénient :** <br>
 Son efficacité dépend du choix du calcul de l’heuristique. <br>
