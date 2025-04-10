@@ -65,12 +65,12 @@ L’algorithme de Dijkstra est une méthode de recherche de chemin optimal qui f
   - Continue jusqu’à atteindre la cible ou avoir exploré tous les nœuds. <br>
 
 **✅ Avantage :** <br>
-  Garantit toujours le chemin le plus court. <br>
+  - Garantit toujours le chemin le plus court. <br>
 
 **❌Inconvénient :** <br>
-  Explore souvent trop de nœuds, ce qui le rend lent sur de grandes cartes.
+  - Explore souvent trop de nœuds, ce qui le rend lent sur de grandes cartes.
 
-
+<br>
 ### Greedy
 Cet algorithme est plus rapide que celui de Dijkstra, mais ne garantit pas toujours le chemin optimal. <br>
 
@@ -79,12 +79,12 @@ Cet algorithme est plus rapide que celui de Dijkstra, mais ne garantit pas toujo
   - Explore toujours en priorité le nœud qui semble le plus proche du but, sans prendre en compte le coût réel du chemin parcouru. <br>
 
 **✅ Avantage :** <br>
-  Rapide car il se focalise directement sur la cible. <br>
+  - Rapide car il se focalise directement sur la cible. <br>
 
 **❌ Inconvénient :** <br>
-Peut ignorer de bons chemins et parfois donner un trajet sous-optimal, ou encore se prendre des obstacles. Beaucoup de hasard.
+  - Peut ignorer de bons chemins et parfois donner un trajet sous-optimal, ou encore se prendre des obstacles. Beaucoup de hasard.
 
-
+<br>
 ### A*
 L’algorithme A* combine Dijkstra et Greedy pour obtenir un bon équilibre entre performance et optimalité. <br>
 
@@ -98,7 +98,9 @@ L’algorithme A* combine Dijkstra et Greedy pour obtenir un bon équilibre entr
 - À chaque étape, il explore le nœud ayant la plus petite valeur de f(n). <br>
 
 **✅ Avantage :** <br>
-  Trouve souvent le chemin optimal tout en explorant moins de nœuds que Dijkstra. <br>
+  - Trouve souvent le chemin optimal tout en explorant moins de nœuds que Dijkstra. <br>
 
 **❌ Inconvénient :** <br>
-Son efficacité dépend du choix du calcul de l’heuristique. <br>
+  - Son efficacité dépend du choix du calcul de l’heuristique. <br>
+
+---
