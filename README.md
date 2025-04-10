@@ -62,6 +62,7 @@ L’algorithme de Dijkstra est une méthode de recherche de chemin optimal qui f
   - Explore les voisins du nœud en cours en mettant à jour leur coût si un chemin plus court est trouvé.
   - Sélectionne à chaque itération le nœud avec le coût le plus faible.
   - Continue jusqu’à atteindre la cible ou avoir exploré tous les nœuds. <br>
+<br>
 **✅ Avantage :** <br>
   Garantit toujours le chemin le plus court. <br>
 **❌Inconvénient :** <br>
@@ -72,21 +73,23 @@ Cet algorithme est plus rapide que celui de Dijkstra, mais ne garantit pas toujo
 **📌 Principe :** <br>
   - Utilise une distance heuristique (souvent la distance euclidienne ou de Manhattan jusqu’au point d'objectif).
   - Explore toujours en priorité le nœud qui semble le plus proche du but, sans prendre en compte le coût réel du chemin parcouru. <br>
+<br>
 **✅ Avantage :** <br>
   Rapide car il se focalise directement sur la cible. <br>
 **❌ Inconvénient :** <br>
 Peut ignorer de bons chemins et parfois donner un trajet sous-optimal, ou encore se prendre des obstacles. Beaucoup de hasard.
 
 ### A*
-L’algorithme A* combine Dijkstra et Greedy pour obtenir un bon équilibre entre performance et optimalité.
+L’algorithme A* combine Dijkstra et Greedy pour obtenir un bon équilibre entre performance et optimalité. <br>
 **📌 Principe :** <br>
 - Utilise une fonction de coût optimale: <br>
   $$f(n)=g(n)+h(n)f(n) = g(n) + h(n)f(n)=g(n)+h(n)$$ <br>
  où : <br>
-  $$g(n) = \text{coût du chemin depuis le départ jusqu’à n (comme Dijkstra)}$$ <br>
+    $$g(n) = \text{coût du chemin depuis le départ jusqu’à n (comme Dijkstra)}$$ <br>
  et : <br>
-  $$h(n) = \text{distance heuristique estimant le coût restant jusqu’à la cible (comme Greedy)}$$ <br>
+    $$h(n) = \text{distance heuristique estimant le coût restant jusqu’à la cible (comme Greedy)}$$ <br>
 - À chaque étape, il explore le nœud ayant la plus petite valeur de f(n). <br>
+
 **✅ Avantage :** <br>
   Trouve souvent le chemin optimal tout en explorant moins de nœuds que Dijkstra. <br>
 **❌ Inconvénient :** <br>
