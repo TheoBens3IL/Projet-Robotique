@@ -14,6 +14,15 @@ rm -rf build devel
 catkin_make
 ```
 
+Pour lancer le programme, executer simplement le script start.sh :
+```
+./start.sh
+```
+et choisir le monde sur lequel lancer la simulation. <br>
+<br>
+
+Pour une explication plus détaillée de l'execution, voir ci-dessous :
+
 **terminal 1 :**
 ```
 cd ~/Projet-Robotique/workspace/
