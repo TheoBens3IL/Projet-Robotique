@@ -69,8 +69,8 @@ L’algorithme de Dijkstra est une méthode de recherche de chemin optimal qui f
 
 **❌Inconvénient :** <br>
   - Explore souvent trop de nœuds, ce qui le rend lent sur de grandes cartes.
-
 <br>
+
 ### Greedy
 Cet algorithme est plus rapide que celui de Dijkstra, mais ne garantit pas toujours le chemin optimal. <br>
 
@@ -83,8 +83,8 @@ Cet algorithme est plus rapide que celui de Dijkstra, mais ne garantit pas toujo
 
 **❌ Inconvénient :** <br>
   - Peut ignorer de bons chemins et parfois donner un trajet sous-optimal, ou encore se prendre des obstacles. Beaucoup de hasard.
-
 <br>
+
 ### A*
 L’algorithme A* combine Dijkstra et Greedy pour obtenir un bon équilibre entre performance et optimalité. <br>
 
