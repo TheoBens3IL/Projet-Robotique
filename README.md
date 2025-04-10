@@ -19,6 +19,7 @@ Pour lancer le programme, executer simplement le script start.sh :
 ./start.sh
 ```
 et choisir le monde sur lequel lancer la simulation. <br>
+Puis, une fois tous les terminal lancés, choisisr (sur le premier terminal) 'p' pour 'path_planning' ou 'm' pour 'motion_planning'. <br>
 <br>
 
 Pour une explication plus détaillée de l'execution, voir ci-dessous :
