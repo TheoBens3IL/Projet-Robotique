@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/ubuntu/Projet-Robotique/workspace/build
 include pp_msgs/CMakeFiles/pp_msgs_generate_messages_py.dir/progress.make
 
 pp_msgs/CMakeFiles/pp_msgs_generate_messages_py: /home/ubuntu/Projet-Robotique/workspace/devel/lib/python3/dist-packages/pp_msgs/srv/_PathPlanningPlugin.py
+pp_msgs/CMakeFiles/pp_msgs_generate_messages_py: /home/ubuntu/Projet-Robotique/workspace/devel/lib/python3/dist-packages/pp_msgs/srv/_MotionPlanningPlugin.py
 pp_msgs/CMakeFiles/pp_msgs_generate_messages_py: /home/ubuntu/Projet-Robotique/workspace/devel/lib/python3/dist-packages/pp_msgs/srv/_MoveItPlugin.py
 pp_msgs/CMakeFiles/pp_msgs_generate_messages_py: /home/ubuntu/Projet-Robotique/workspace/devel/lib/python3/dist-packages/pp_msgs/srv/__init__.py
 
@@ -63,22 +64,29 @@ pp_msgs/CMakeFiles/pp_msgs_generate_messages_py: /home/ubuntu/Projet-Robotique/w
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/Projet-Robotique/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code from SRV pp_msgs/PathPlanningPlugin"
 	cd /home/ubuntu/Projet-Robotique/workspace/build/pp_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/ubuntu/Projet-Robotique/workspace/src/pp_msgs/srv/PathPlanningPlugin.srv -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/noetic/share/trajectory_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p pp_msgs -o /home/ubuntu/Projet-Robotique/workspace/devel/lib/python3/dist-packages/pp_msgs/srv
 
+/home/ubuntu/Projet-Robotique/workspace/devel/lib/python3/dist-packages/pp_msgs/srv/_MotionPlanningPlugin.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/ubuntu/Projet-Robotique/workspace/devel/lib/python3/dist-packages/pp_msgs/srv/_MotionPlanningPlugin.py: /home/ubuntu/Projet-Robotique/workspace/src/pp_msgs/srv/MotionPlanningPlugin.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/Projet-Robotique/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python code from SRV pp_msgs/MotionPlanningPlugin"
+	cd /home/ubuntu/Projet-Robotique/workspace/build/pp_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/ubuntu/Projet-Robotique/workspace/src/pp_msgs/srv/MotionPlanningPlugin.srv -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/noetic/share/trajectory_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p pp_msgs -o /home/ubuntu/Projet-Robotique/workspace/devel/lib/python3/dist-packages/pp_msgs/srv
+
 /home/ubuntu/Projet-Robotique/workspace/devel/lib/python3/dist-packages/pp_msgs/srv/_MoveItPlugin.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
 /home/ubuntu/Projet-Robotique/workspace/devel/lib/python3/dist-packages/pp_msgs/srv/_MoveItPlugin.py: /home/ubuntu/Projet-Robotique/workspace/src/pp_msgs/srv/MoveItPlugin.srv
 /home/ubuntu/Projet-Robotique/workspace/devel/lib/python3/dist-packages/pp_msgs/srv/_MoveItPlugin.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/ubuntu/Projet-Robotique/workspace/devel/lib/python3/dist-packages/pp_msgs/srv/_MoveItPlugin.py: /opt/ros/noetic/share/trajectory_msgs/msg/JointTrajectoryPoint.msg
 /home/ubuntu/Projet-Robotique/workspace/devel/lib/python3/dist-packages/pp_msgs/srv/_MoveItPlugin.py: /opt/ros/noetic/share/trajectory_msgs/msg/JointTrajectory.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/Projet-Robotique/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python code from SRV pp_msgs/MoveItPlugin"
+/home/ubuntu/Projet-Robotique/workspace/devel/lib/python3/dist-packages/pp_msgs/srv/_MoveItPlugin.py: /opt/ros/noetic/share/trajectory_msgs/msg/JointTrajectoryPoint.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/Projet-Robotique/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python code from SRV pp_msgs/MoveItPlugin"
 	cd /home/ubuntu/Projet-Robotique/workspace/build/pp_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/ubuntu/Projet-Robotique/workspace/src/pp_msgs/srv/MoveItPlugin.srv -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/noetic/share/trajectory_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p pp_msgs -o /home/ubuntu/Projet-Robotique/workspace/devel/lib/python3/dist-packages/pp_msgs/srv
 
 /home/ubuntu/Projet-Robotique/workspace/devel/lib/python3/dist-packages/pp_msgs/srv/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /home/ubuntu/Projet-Robotique/workspace/devel/lib/python3/dist-packages/pp_msgs/srv/__init__.py: /home/ubuntu/Projet-Robotique/workspace/devel/lib/python3/dist-packages/pp_msgs/srv/_PathPlanningPlugin.py
+/home/ubuntu/Projet-Robotique/workspace/devel/lib/python3/dist-packages/pp_msgs/srv/__init__.py: /home/ubuntu/Projet-Robotique/workspace/devel/lib/python3/dist-packages/pp_msgs/srv/_MotionPlanningPlugin.py
 /home/ubuntu/Projet-Robotique/workspace/devel/lib/python3/dist-packages/pp_msgs/srv/__init__.py: /home/ubuntu/Projet-Robotique/workspace/devel/lib/python3/dist-packages/pp_msgs/srv/_MoveItPlugin.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/Projet-Robotique/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python srv __init__.py for pp_msgs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/Projet-Robotique/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python srv __init__.py for pp_msgs"
 	cd /home/ubuntu/Projet-Robotique/workspace/build/pp_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/ubuntu/Projet-Robotique/workspace/devel/lib/python3/dist-packages/pp_msgs/srv --initpy
 
 pp_msgs_generate_messages_py: pp_msgs/CMakeFiles/pp_msgs_generate_messages_py
 pp_msgs_generate_messages_py: /home/ubuntu/Projet-Robotique/workspace/devel/lib/python3/dist-packages/pp_msgs/srv/_PathPlanningPlugin.py
+pp_msgs_generate_messages_py: /home/ubuntu/Projet-Robotique/workspace/devel/lib/python3/dist-packages/pp_msgs/srv/_MotionPlanningPlugin.py
 pp_msgs_generate_messages_py: /home/ubuntu/Projet-Robotique/workspace/devel/lib/python3/dist-packages/pp_msgs/srv/_MoveItPlugin.py
 pp_msgs_generate_messages_py: /home/ubuntu/Projet-Robotique/workspace/devel/lib/python3/dist-packages/pp_msgs/srv/__init__.py
 pp_msgs_generate_messages_py: pp_msgs/CMakeFiles/pp_msgs_generate_messages_py.dir/build.make

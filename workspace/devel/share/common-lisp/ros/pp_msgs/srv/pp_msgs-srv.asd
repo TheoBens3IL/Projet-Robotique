@@ -5,6 +5,8 @@
   :depends-on (:roslisp-msg-protocol :roslisp-utils :trajectory_msgs-msg
 )
   :components ((:file "_package")
+    (:file "MotionPlanningPlugin" :depends-on ("_package_MotionPlanningPlugin"))
+    (:file "_package_MotionPlanningPlugin" :depends-on ("_package"))
     (:file "MoveItPlugin" :depends-on ("_package_MoveItPlugin"))
     (:file "_package_MoveItPlugin" :depends-on ("_package"))
     (:file "PathPlanningPlugin" :depends-on ("_package_PathPlanningPlugin"))

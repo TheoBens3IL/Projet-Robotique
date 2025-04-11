@@ -26,9 +26,20 @@ def make_plan(req):
 
     viz = GridViz(costmap, resolution, origin, start_index, goal_index, width)
 
-    # Choisissez ici l'algorithme à tester
-    algorithm = dijkstra  # Remplacez par dijkstra, greedy, q_learning ou lpastar
+    # Récupérer l'algorithme depuis les paramètres ROS
+    algorithm_name = rospy.get_param('~algorithm', 'astar')
     
+    # Mapper le nom de l'algorithme à la fonction correspondante
+    algorithms = {
+        'dijkstra': dijkstra,
+        'astar': astar,
+        'greedy': greedy,
+        'lpastar': lpastar
+    }
+
+    # Obtenir la fonction de l'algorithme
+    algorithm = algorithms.get(algorithm_name, astar)  # Par défaut A* si non trouvé
+
     rospy.loginfo("Planification de trajectoire en cours avec l'algorithme : %s", algorithm.__name__)
     
     # Mesure du temps d'exécution
@@ -80,4 +91,3 @@ if __name__ == '__main__':
     
     rospy.loginfo("Fermeture du service.")
     rospy.Timer(rospy.Duration(2), rospy.signal_shutdown('Arrêt en cours...'), oneshot=True)
-

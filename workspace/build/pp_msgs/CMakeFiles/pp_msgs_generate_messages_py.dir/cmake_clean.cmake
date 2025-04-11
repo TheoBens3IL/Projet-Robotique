@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "/home/ubuntu/Projet-Robotique/workspace/devel/lib/python3/dist-packages/pp_msgs/srv/_MotionPlanningPlugin.py"
   "/home/ubuntu/Projet-Robotique/workspace/devel/lib/python3/dist-packages/pp_msgs/srv/_MoveItPlugin.py"
   "/home/ubuntu/Projet-Robotique/workspace/devel/lib/python3/dist-packages/pp_msgs/srv/_PathPlanningPlugin.py"
   "/home/ubuntu/Projet-Robotique/workspace/devel/lib/python3/dist-packages/pp_msgs/srv/__init__.py"
