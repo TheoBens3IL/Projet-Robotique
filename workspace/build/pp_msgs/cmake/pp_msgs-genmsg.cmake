@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "pp_msgs: 0 messages, 2 services")
+message(STATUS "pp_msgs: 0 messages, 3 services")
 
 set(MSG_I_FLAGS "-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg;-Itrajectory_msgs:/opt/ros/noetic/share/trajectory_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg")
 
@@ -22,9 +22,14 @@ add_custom_target(_pp_msgs_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "pp_msgs" "/home/ubuntu/Projet-Robotique/workspace/src/pp_msgs/srv/PathPlanningPlugin.srv" ""
 )
 
+get_filename_component(_filename "/home/ubuntu/Projet-Robotique/workspace/src/pp_msgs/srv/MotionPlanningPlugin.srv" NAME_WE)
+add_custom_target(_pp_msgs_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "pp_msgs" "/home/ubuntu/Projet-Robotique/workspace/src/pp_msgs/srv/MotionPlanningPlugin.srv" ""
+)
+
 get_filename_component(_filename "/home/ubuntu/Projet-Robotique/workspace/src/pp_msgs/srv/MoveItPlugin.srv" NAME_WE)
 add_custom_target(_pp_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "pp_msgs" "/home/ubuntu/Projet-Robotique/workspace/src/pp_msgs/srv/MoveItPlugin.srv" "std_msgs/Header:trajectory_msgs/JointTrajectoryPoint:trajectory_msgs/JointTrajectory"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "pp_msgs" "/home/ubuntu/Projet-Robotique/workspace/src/pp_msgs/srv/MoveItPlugin.srv" "std_msgs/Header:trajectory_msgs/JointTrajectory:trajectory_msgs/JointTrajectoryPoint"
 )
 
 #
@@ -42,9 +47,15 @@ _generate_srv_cpp(pp_msgs
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/pp_msgs
 )
 _generate_srv_cpp(pp_msgs
+  "/home/ubuntu/Projet-Robotique/workspace/src/pp_msgs/srv/MotionPlanningPlugin.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/pp_msgs
+)
+_generate_srv_cpp(pp_msgs
   "/home/ubuntu/Projet-Robotique/workspace/src/pp_msgs/srv/MoveItPlugin.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/pp_msgs
 )
 
@@ -61,6 +72,8 @@ add_dependencies(pp_msgs_generate_messages pp_msgs_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/ubuntu/Projet-Robotique/workspace/src/pp_msgs/srv/PathPlanningPlugin.srv" NAME_WE)
+add_dependencies(pp_msgs_generate_messages_cpp _pp_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/ubuntu/Projet-Robotique/workspace/src/pp_msgs/srv/MotionPlanningPlugin.srv" NAME_WE)
 add_dependencies(pp_msgs_generate_messages_cpp _pp_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/ubuntu/Projet-Robotique/workspace/src/pp_msgs/srv/MoveItPlugin.srv" NAME_WE)
 add_dependencies(pp_msgs_generate_messages_cpp _pp_msgs_generate_messages_check_deps_${_filename})
@@ -83,9 +96,15 @@ _generate_srv_eus(pp_msgs
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/pp_msgs
 )
 _generate_srv_eus(pp_msgs
+  "/home/ubuntu/Projet-Robotique/workspace/src/pp_msgs/srv/MotionPlanningPlugin.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/pp_msgs
+)
+_generate_srv_eus(pp_msgs
   "/home/ubuntu/Projet-Robotique/workspace/src/pp_msgs/srv/MoveItPlugin.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/pp_msgs
 )
 
@@ -102,6 +121,8 @@ add_dependencies(pp_msgs_generate_messages pp_msgs_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/ubuntu/Projet-Robotique/workspace/src/pp_msgs/srv/PathPlanningPlugin.srv" NAME_WE)
+add_dependencies(pp_msgs_generate_messages_eus _pp_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/ubuntu/Projet-Robotique/workspace/src/pp_msgs/srv/MotionPlanningPlugin.srv" NAME_WE)
 add_dependencies(pp_msgs_generate_messages_eus _pp_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/ubuntu/Projet-Robotique/workspace/src/pp_msgs/srv/MoveItPlugin.srv" NAME_WE)
 add_dependencies(pp_msgs_generate_messages_eus _pp_msgs_generate_messages_check_deps_${_filename})
@@ -124,9 +145,15 @@ _generate_srv_lisp(pp_msgs
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/pp_msgs
 )
 _generate_srv_lisp(pp_msgs
+  "/home/ubuntu/Projet-Robotique/workspace/src/pp_msgs/srv/MotionPlanningPlugin.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/pp_msgs
+)
+_generate_srv_lisp(pp_msgs
   "/home/ubuntu/Projet-Robotique/workspace/src/pp_msgs/srv/MoveItPlugin.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/pp_msgs
 )
 
@@ -143,6 +170,8 @@ add_dependencies(pp_msgs_generate_messages pp_msgs_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/ubuntu/Projet-Robotique/workspace/src/pp_msgs/srv/PathPlanningPlugin.srv" NAME_WE)
+add_dependencies(pp_msgs_generate_messages_lisp _pp_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/ubuntu/Projet-Robotique/workspace/src/pp_msgs/srv/MotionPlanningPlugin.srv" NAME_WE)
 add_dependencies(pp_msgs_generate_messages_lisp _pp_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/ubuntu/Projet-Robotique/workspace/src/pp_msgs/srv/MoveItPlugin.srv" NAME_WE)
 add_dependencies(pp_msgs_generate_messages_lisp _pp_msgs_generate_messages_check_deps_${_filename})
@@ -165,9 +194,15 @@ _generate_srv_nodejs(pp_msgs
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/pp_msgs
 )
 _generate_srv_nodejs(pp_msgs
+  "/home/ubuntu/Projet-Robotique/workspace/src/pp_msgs/srv/MotionPlanningPlugin.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/pp_msgs
+)
+_generate_srv_nodejs(pp_msgs
   "/home/ubuntu/Projet-Robotique/workspace/src/pp_msgs/srv/MoveItPlugin.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/pp_msgs
 )
 
@@ -184,6 +219,8 @@ add_dependencies(pp_msgs_generate_messages pp_msgs_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/ubuntu/Projet-Robotique/workspace/src/pp_msgs/srv/PathPlanningPlugin.srv" NAME_WE)
+add_dependencies(pp_msgs_generate_messages_nodejs _pp_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/ubuntu/Projet-Robotique/workspace/src/pp_msgs/srv/MotionPlanningPlugin.srv" NAME_WE)
 add_dependencies(pp_msgs_generate_messages_nodejs _pp_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/ubuntu/Projet-Robotique/workspace/src/pp_msgs/srv/MoveItPlugin.srv" NAME_WE)
 add_dependencies(pp_msgs_generate_messages_nodejs _pp_msgs_generate_messages_check_deps_${_filename})
@@ -206,9 +243,15 @@ _generate_srv_py(pp_msgs
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/pp_msgs
 )
 _generate_srv_py(pp_msgs
+  "/home/ubuntu/Projet-Robotique/workspace/src/pp_msgs/srv/MotionPlanningPlugin.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/pp_msgs
+)
+_generate_srv_py(pp_msgs
   "/home/ubuntu/Projet-Robotique/workspace/src/pp_msgs/srv/MoveItPlugin.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/pp_msgs
 )
 
@@ -225,6 +268,8 @@ add_dependencies(pp_msgs_generate_messages pp_msgs_generate_messages_py)
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/ubuntu/Projet-Robotique/workspace/src/pp_msgs/srv/PathPlanningPlugin.srv" NAME_WE)
+add_dependencies(pp_msgs_generate_messages_py _pp_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/ubuntu/Projet-Robotique/workspace/src/pp_msgs/srv/MotionPlanningPlugin.srv" NAME_WE)
 add_dependencies(pp_msgs_generate_messages_py _pp_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/ubuntu/Projet-Robotique/workspace/src/pp_msgs/srv/MoveItPlugin.srv" NAME_WE)
 add_dependencies(pp_msgs_generate_messages_py _pp_msgs_generate_messages_check_deps_${_filename})

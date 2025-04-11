@@ -1,10 +1,12 @@
 
 "use strict";
 
-let MoveItPlugin = require('./MoveItPlugin.js')
+let MotionPlanningPlugin = require('./MotionPlanningPlugin.js')
 let PathPlanningPlugin = require('./PathPlanningPlugin.js')
+let MoveItPlugin = require('./MoveItPlugin.js')
 
 module.exports = {
-  MoveItPlugin: MoveItPlugin,
+  MotionPlanningPlugin: MotionPlanningPlugin,
   PathPlanningPlugin: PathPlanningPlugin,
+  MoveItPlugin: MoveItPlugin,
 };
