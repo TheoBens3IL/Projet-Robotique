@@ -97,8 +97,8 @@ du robot.
 ### **Étape 1 : Simulation dans Gazebo d’un lieu réel avec obstacles**
 La première grande étape de notre projet était donc de simuler un environnement réel ainsi que les obstacles spécifiques à cet endroit. Pour cela nous avons choisi de simuler la salle de classe, ainsi que certaines chaises et bureaux. <br>
 Pour simuler cette salle, nous avons utilisé Gazebo :
-● Building Editor : Création des murs, portes et fenêtres avec des textures et des couleurs adaptées.
-● Model Editor : Ajout de modèles 3D (bureaux, chaises) depuis la bibliothèque Gazebo.
+- Building Editor : Création des murs, portes et fenêtres avec des textures et des couleurs adaptées.
+- Model Editor : Ajout de modèles 3D (bureaux, chaises) depuis la bibliothèque Gazebo.
 Le fichier `.world` généré a été intégré à un fichier `.launch` de lancement ROS pour y inclure le TurtleBot et lancer la carte dans gazebo.
 
 **Problème rencontré :** Difficulté à faire apparaître le robot dans l’environnement. <br>
@@ -118,7 +118,7 @@ Le robot a été déplacé manuellement à l’aide d’un script de téléopér
 ---
 ### **Étape 3 : Analyse des différents algorithmes de navigation**
 
-#### **Dijkstra**
+### **Dijkstra**
 L’algorithme de Dijkstra est une méthode de recherche de chemin optimal qui fonctionne en explorant tous les chemins possibles à partir du nœud de départ en fonction du coût cumulé. <br>
 
 **📌 Principe :** <br>
@@ -136,7 +136,7 @@ L’algorithme de Dijkstra est une méthode de recherche de chemin optimal qui f
   - Explore souvent trop de nœuds, ce qui le rend lent sur de grandes cartes.
 <br>
 
-#### **Greedy**
+### **Greedy**
 Cet algorithme est plus rapide que celui de Dijkstra, mais ne garantit pas toujours le chemin optimal. <br>
 
 **📌 Principe :** <br>
@@ -152,7 +152,7 @@ Cet algorithme est plus rapide que celui de Dijkstra, mais ne garantit pas toujo
   - Peut ignorer de bons chemins et parfois donner un trajet sous-optimal, ou encore se prendre des obstacles. Beaucoup de hasard.
 <br>
 
-#### **A\***
+### **A\***
 L’algorithme A* combine Dijkstra et Greedy pour obtenir un bon équilibre entre performance et optimalité. <br>
 
 **📌 Principe :** <br>
