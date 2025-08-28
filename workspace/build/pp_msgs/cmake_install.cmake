@@ -40,6 +40,7 @@ endif()
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pp_msgs/srv" TYPE FILE FILES
     "/home/ubuntu/Projet-Robotique/workspace/src/pp_msgs/srv/PathPlanningPlugin.srv"
+    "/home/ubuntu/Projet-Robotique/workspace/src/pp_msgs/srv/MotionPlanningPlugin.srv"
     "/home/ubuntu/Projet-Robotique/workspace/src/pp_msgs/srv/MoveItPlugin.srv"
     )
 endif()

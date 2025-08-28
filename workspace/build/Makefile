@@ -350,6 +350,19 @@ pp_msgs_generate_messages_eus/fast:
 .PHONY : pp_msgs_generate_messages_eus/fast
 
 #=============================================================================
+# Target rules for targets named pp_msgs_generate_messages_cpp
+
+# Build rule for target.
+pp_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pp_msgs_generate_messages_cpp
+.PHONY : pp_msgs_generate_messages_cpp
+
+# fast build rule for target.
+pp_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f pp_msgs/CMakeFiles/pp_msgs_generate_messages_cpp.dir/build.make pp_msgs/CMakeFiles/pp_msgs_generate_messages_cpp.dir/build
+.PHONY : pp_msgs_generate_messages_cpp/fast
+
+#=============================================================================
 # Target rules for targets named pp_msgs_generate_messages_nodejs
 
 # Build rule for target.
@@ -610,19 +623,6 @@ roscpp_generate_messages_eus/fast:
 .PHONY : roscpp_generate_messages_eus/fast
 
 #=============================================================================
-# Target rules for targets named roscpp_generate_messages_cpp
-
-# Build rule for target.
-roscpp_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_cpp
-.PHONY : roscpp_generate_messages_cpp
-
-# fast build rule for target.
-roscpp_generate_messages_cpp/fast:
-	$(MAKE) -f pp_msgs/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make pp_msgs/CMakeFiles/roscpp_generate_messages_cpp.dir/build
-.PHONY : roscpp_generate_messages_cpp/fast
-
-#=============================================================================
 # Target rules for targets named geometry_msgs_generate_messages_py
 
 # Build rule for target.
@@ -779,17 +779,30 @@ geometry_msgs_generate_messages_eus/fast:
 .PHONY : geometry_msgs_generate_messages_eus/fast
 
 #=============================================================================
-# Target rules for targets named pp_msgs_generate_messages_cpp
+# Target rules for targets named roscpp_generate_messages_cpp
 
 # Build rule for target.
-pp_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pp_msgs_generate_messages_cpp
-.PHONY : pp_msgs_generate_messages_cpp
+roscpp_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_cpp
+.PHONY : roscpp_generate_messages_cpp
 
 # fast build rule for target.
-pp_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f pp_msgs/CMakeFiles/pp_msgs_generate_messages_cpp.dir/build.make pp_msgs/CMakeFiles/pp_msgs_generate_messages_cpp.dir/build
-.PHONY : pp_msgs_generate_messages_cpp/fast
+roscpp_generate_messages_cpp/fast:
+	$(MAKE) -f pp_msgs/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make pp_msgs/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+.PHONY : roscpp_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named _pp_msgs_generate_messages_check_deps_MotionPlanningPlugin
+
+# Build rule for target.
+_pp_msgs_generate_messages_check_deps_MotionPlanningPlugin: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _pp_msgs_generate_messages_check_deps_MotionPlanningPlugin
+.PHONY : _pp_msgs_generate_messages_check_deps_MotionPlanningPlugin
+
+# fast build rule for target.
+_pp_msgs_generate_messages_check_deps_MotionPlanningPlugin/fast:
+	$(MAKE) -f pp_msgs/CMakeFiles/_pp_msgs_generate_messages_check_deps_MotionPlanningPlugin.dir/build.make pp_msgs/CMakeFiles/_pp_msgs_generate_messages_check_deps_MotionPlanningPlugin.dir/build
+.PHONY : _pp_msgs_generate_messages_check_deps_MotionPlanningPlugin/fast
 
 #=============================================================================
 # Target rules for targets named dynamic_reconfigure_generate_messages_eus
@@ -1598,6 +1611,7 @@ help:
 	@echo "... pp_msgs_genlisp"
 	@echo "... pp_msgs_generate_messages_lisp"
 	@echo "... pp_msgs_generate_messages_eus"
+	@echo "... pp_msgs_generate_messages_cpp"
 	@echo "... pp_msgs_generate_messages_nodejs"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... roscpp_generate_messages_lisp"
@@ -1618,7 +1632,6 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... pp_msgs_geneus"
 	@echo "... roscpp_generate_messages_eus"
-	@echo "... roscpp_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... pp_msgs_genpy"
 	@echo "... _pp_msgs_generate_messages_check_deps_MoveItPlugin"
@@ -1631,7 +1644,8 @@ help:
 	@echo "... _pp_msgs_generate_messages_check_deps_PathPlanningPlugin"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... geometry_msgs_generate_messages_eus"
-	@echo "... pp_msgs_generate_messages_cpp"
+	@echo "... roscpp_generate_messages_cpp"
+	@echo "... _pp_msgs_generate_messages_check_deps_MotionPlanningPlugin"
 	@echo "... dynamic_reconfigure_generate_messages_eus"
 	@echo "... dynamic_reconfigure_gencfg"
 	@echo "... costmap_2d_gencfg"

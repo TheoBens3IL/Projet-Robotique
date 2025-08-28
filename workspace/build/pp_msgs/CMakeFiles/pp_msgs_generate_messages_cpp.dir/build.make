@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/ubuntu/Projet-Robotique/workspace/build
 include pp_msgs/CMakeFiles/pp_msgs_generate_messages_cpp.dir/progress.make
 
 pp_msgs/CMakeFiles/pp_msgs_generate_messages_cpp: /home/ubuntu/Projet-Robotique/workspace/devel/include/pp_msgs/PathPlanningPlugin.h
+pp_msgs/CMakeFiles/pp_msgs_generate_messages_cpp: /home/ubuntu/Projet-Robotique/workspace/devel/include/pp_msgs/MotionPlanningPlugin.h
 pp_msgs/CMakeFiles/pp_msgs_generate_messages_cpp: /home/ubuntu/Projet-Robotique/workspace/devel/include/pp_msgs/MoveItPlugin.h
 
 
@@ -64,18 +65,26 @@ pp_msgs/CMakeFiles/pp_msgs_generate_messages_cpp: /home/ubuntu/Projet-Robotique/
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/Projet-Robotique/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from pp_msgs/PathPlanningPlugin.srv"
 	cd /home/ubuntu/Projet-Robotique/workspace/src/pp_msgs && /home/ubuntu/Projet-Robotique/workspace/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/ubuntu/Projet-Robotique/workspace/src/pp_msgs/srv/PathPlanningPlugin.srv -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/noetic/share/trajectory_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p pp_msgs -o /home/ubuntu/Projet-Robotique/workspace/devel/include/pp_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
+/home/ubuntu/Projet-Robotique/workspace/devel/include/pp_msgs/MotionPlanningPlugin.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/ubuntu/Projet-Robotique/workspace/devel/include/pp_msgs/MotionPlanningPlugin.h: /home/ubuntu/Projet-Robotique/workspace/src/pp_msgs/srv/MotionPlanningPlugin.srv
+/home/ubuntu/Projet-Robotique/workspace/devel/include/pp_msgs/MotionPlanningPlugin.h: /opt/ros/noetic/share/gencpp/msg.h.template
+/home/ubuntu/Projet-Robotique/workspace/devel/include/pp_msgs/MotionPlanningPlugin.h: /opt/ros/noetic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/Projet-Robotique/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from pp_msgs/MotionPlanningPlugin.srv"
+	cd /home/ubuntu/Projet-Robotique/workspace/src/pp_msgs && /home/ubuntu/Projet-Robotique/workspace/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/ubuntu/Projet-Robotique/workspace/src/pp_msgs/srv/MotionPlanningPlugin.srv -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/noetic/share/trajectory_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p pp_msgs -o /home/ubuntu/Projet-Robotique/workspace/devel/include/pp_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
+
 /home/ubuntu/Projet-Robotique/workspace/devel/include/pp_msgs/MoveItPlugin.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/ubuntu/Projet-Robotique/workspace/devel/include/pp_msgs/MoveItPlugin.h: /home/ubuntu/Projet-Robotique/workspace/src/pp_msgs/srv/MoveItPlugin.srv
 /home/ubuntu/Projet-Robotique/workspace/devel/include/pp_msgs/MoveItPlugin.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/ubuntu/Projet-Robotique/workspace/devel/include/pp_msgs/MoveItPlugin.h: /opt/ros/noetic/share/trajectory_msgs/msg/JointTrajectoryPoint.msg
 /home/ubuntu/Projet-Robotique/workspace/devel/include/pp_msgs/MoveItPlugin.h: /opt/ros/noetic/share/trajectory_msgs/msg/JointTrajectory.msg
+/home/ubuntu/Projet-Robotique/workspace/devel/include/pp_msgs/MoveItPlugin.h: /opt/ros/noetic/share/trajectory_msgs/msg/JointTrajectoryPoint.msg
 /home/ubuntu/Projet-Robotique/workspace/devel/include/pp_msgs/MoveItPlugin.h: /opt/ros/noetic/share/gencpp/msg.h.template
 /home/ubuntu/Projet-Robotique/workspace/devel/include/pp_msgs/MoveItPlugin.h: /opt/ros/noetic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/Projet-Robotique/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from pp_msgs/MoveItPlugin.srv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/Projet-Robotique/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating C++ code from pp_msgs/MoveItPlugin.srv"
 	cd /home/ubuntu/Projet-Robotique/workspace/src/pp_msgs && /home/ubuntu/Projet-Robotique/workspace/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/ubuntu/Projet-Robotique/workspace/src/pp_msgs/srv/MoveItPlugin.srv -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/noetic/share/trajectory_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p pp_msgs -o /home/ubuntu/Projet-Robotique/workspace/devel/include/pp_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
 pp_msgs_generate_messages_cpp: pp_msgs/CMakeFiles/pp_msgs_generate_messages_cpp
 pp_msgs_generate_messages_cpp: /home/ubuntu/Projet-Robotique/workspace/devel/include/pp_msgs/PathPlanningPlugin.h
+pp_msgs_generate_messages_cpp: /home/ubuntu/Projet-Robotique/workspace/devel/include/pp_msgs/MotionPlanningPlugin.h
 pp_msgs_generate_messages_cpp: /home/ubuntu/Projet-Robotique/workspace/devel/include/pp_msgs/MoveItPlugin.h
 pp_msgs_generate_messages_cpp: pp_msgs/CMakeFiles/pp_msgs_generate_messages_cpp.dir/build.make
 

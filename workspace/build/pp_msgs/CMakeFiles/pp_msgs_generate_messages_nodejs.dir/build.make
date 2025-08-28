@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/ubuntu/Projet-Robotique/workspace/build
 include pp_msgs/CMakeFiles/pp_msgs_generate_messages_nodejs.dir/progress.make
 
 pp_msgs/CMakeFiles/pp_msgs_generate_messages_nodejs: /home/ubuntu/Projet-Robotique/workspace/devel/share/gennodejs/ros/pp_msgs/srv/PathPlanningPlugin.js
+pp_msgs/CMakeFiles/pp_msgs_generate_messages_nodejs: /home/ubuntu/Projet-Robotique/workspace/devel/share/gennodejs/ros/pp_msgs/srv/MotionPlanningPlugin.js
 pp_msgs/CMakeFiles/pp_msgs_generate_messages_nodejs: /home/ubuntu/Projet-Robotique/workspace/devel/share/gennodejs/ros/pp_msgs/srv/MoveItPlugin.js
 
 
@@ -62,16 +63,22 @@ pp_msgs/CMakeFiles/pp_msgs_generate_messages_nodejs: /home/ubuntu/Projet-Robotiq
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/Projet-Robotique/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from pp_msgs/PathPlanningPlugin.srv"
 	cd /home/ubuntu/Projet-Robotique/workspace/build/pp_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/ubuntu/Projet-Robotique/workspace/src/pp_msgs/srv/PathPlanningPlugin.srv -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/noetic/share/trajectory_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p pp_msgs -o /home/ubuntu/Projet-Robotique/workspace/devel/share/gennodejs/ros/pp_msgs/srv
 
+/home/ubuntu/Projet-Robotique/workspace/devel/share/gennodejs/ros/pp_msgs/srv/MotionPlanningPlugin.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
+/home/ubuntu/Projet-Robotique/workspace/devel/share/gennodejs/ros/pp_msgs/srv/MotionPlanningPlugin.js: /home/ubuntu/Projet-Robotique/workspace/src/pp_msgs/srv/MotionPlanningPlugin.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/Projet-Robotique/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from pp_msgs/MotionPlanningPlugin.srv"
+	cd /home/ubuntu/Projet-Robotique/workspace/build/pp_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/ubuntu/Projet-Robotique/workspace/src/pp_msgs/srv/MotionPlanningPlugin.srv -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/noetic/share/trajectory_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p pp_msgs -o /home/ubuntu/Projet-Robotique/workspace/devel/share/gennodejs/ros/pp_msgs/srv
+
 /home/ubuntu/Projet-Robotique/workspace/devel/share/gennodejs/ros/pp_msgs/srv/MoveItPlugin.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/ubuntu/Projet-Robotique/workspace/devel/share/gennodejs/ros/pp_msgs/srv/MoveItPlugin.js: /home/ubuntu/Projet-Robotique/workspace/src/pp_msgs/srv/MoveItPlugin.srv
 /home/ubuntu/Projet-Robotique/workspace/devel/share/gennodejs/ros/pp_msgs/srv/MoveItPlugin.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/ubuntu/Projet-Robotique/workspace/devel/share/gennodejs/ros/pp_msgs/srv/MoveItPlugin.js: /opt/ros/noetic/share/trajectory_msgs/msg/JointTrajectoryPoint.msg
 /home/ubuntu/Projet-Robotique/workspace/devel/share/gennodejs/ros/pp_msgs/srv/MoveItPlugin.js: /opt/ros/noetic/share/trajectory_msgs/msg/JointTrajectory.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/Projet-Robotique/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from pp_msgs/MoveItPlugin.srv"
+/home/ubuntu/Projet-Robotique/workspace/devel/share/gennodejs/ros/pp_msgs/srv/MoveItPlugin.js: /opt/ros/noetic/share/trajectory_msgs/msg/JointTrajectoryPoint.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/Projet-Robotique/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Javascript code from pp_msgs/MoveItPlugin.srv"
 	cd /home/ubuntu/Projet-Robotique/workspace/build/pp_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/ubuntu/Projet-Robotique/workspace/src/pp_msgs/srv/MoveItPlugin.srv -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/noetic/share/trajectory_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p pp_msgs -o /home/ubuntu/Projet-Robotique/workspace/devel/share/gennodejs/ros/pp_msgs/srv
 
 pp_msgs_generate_messages_nodejs: pp_msgs/CMakeFiles/pp_msgs_generate_messages_nodejs
 pp_msgs_generate_messages_nodejs: /home/ubuntu/Projet-Robotique/workspace/devel/share/gennodejs/ros/pp_msgs/srv/PathPlanningPlugin.js
+pp_msgs_generate_messages_nodejs: /home/ubuntu/Projet-Robotique/workspace/devel/share/gennodejs/ros/pp_msgs/srv/MotionPlanningPlugin.js
 pp_msgs_generate_messages_nodejs: /home/ubuntu/Projet-Robotique/workspace/devel/share/gennodejs/ros/pp_msgs/srv/MoveItPlugin.js
 pp_msgs_generate_messages_nodejs: pp_msgs/CMakeFiles/pp_msgs_generate_messages_nodejs.dir/build.make
 

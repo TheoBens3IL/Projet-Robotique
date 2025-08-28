@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "/home/ubuntu/Projet-Robotique/workspace/devel/share/gennodejs/ros/pp_msgs/srv/MotionPlanningPlugin.js"
   "/home/ubuntu/Projet-Robotique/workspace/devel/share/gennodejs/ros/pp_msgs/srv/MoveItPlugin.js"
   "/home/ubuntu/Projet-Robotique/workspace/devel/share/gennodejs/ros/pp_msgs/srv/PathPlanningPlugin.js"
   "CMakeFiles/pp_msgs_generate_messages_nodejs"
